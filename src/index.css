@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #D4AF37;
+  --color-gold-light: #F4E5B0;
+  --color-charcoal: #1A1A1A;
+  --color-charcoal-light: #2D2D2D;
+  --color-white: #FFFFFF;
+  --color-off-white: #F8F8F8;
+  
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+body {
+  @apply bg-white text-charcoal font-sans antialiased;
+}
+
+.btn-primary {
+  @apply bg-charcoal text-white px-8 py-4 uppercase tracking-widest text-sm font-medium hover:bg-gold transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply border border-charcoal text-charcoal px-8 py-4 uppercase tracking-widest text-sm font-medium hover:bg-charcoal hover:text-white transition-all duration-300;
+}
