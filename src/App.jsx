@@ -922,13 +922,8 @@ const Navigation = ({ cartCount, wishlistCount }) => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-<Link to="/">
-  <img 
-    src="/ivera-logo.png"
-    alt="IVERA Logo"
-    className={`h-10 transition-all ${scrolled ? 'brightness-0' : 'brightness-0 invert'}`}
-  />
-</Link>        <div className="hidden md:flex gap-8">
+        <Link to="/" className={`text-2xl font-serif tracking-wider transition-colors ${scrolled ? 'text-gray-900' : 'text-white'}`}>IVERA</Link>
+        <div className="hidden md:flex gap-8">
           {[['/', 'Collection'], ['/wishlist', 'Wishlist']].map(([to, label]) => (
             <Link key={to} to={to} className={`text-xs uppercase tracking-[0.2em] hover:text-amber-400 transition-colors ${scrolled ? 'text-gray-700' : 'text-white/90'}`}>{label}</Link>
           ))}
@@ -956,11 +951,8 @@ const Hero = () => (
     </div>
     <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
       <p className="text-xs uppercase tracking-[0.55em] mb-6 text-amber-300 drop-shadow-md">Timeless Elegance</p>
-<img 
-  src="/ivera-logo.png"
-  alt="IVERA"
-  className="mx-auto mb-6 w-[220px] md:w-[280px] drop-shadow-2xl"
-/>      <p className="font-serif italic font-light mb-6" style={{ fontSize:'clamp(1.4rem,3.5vw,2.4rem)', color:'#F6D78A', textShadow:'0 1px 12px rgba(0,0,0,0.55)', letterSpacing:'0.04em' }}>Jewellery Design</p>
+      <h1 className="font-serif font-light leading-tight mb-4" style={{ fontSize:'clamp(3rem,8vw,6rem)', color:'#FFFFFF', textShadow:'0 2px 24px rgba(0,0,0,0.6)', letterSpacing:'0.06em' }}>IVERA</h1>
+      <p className="font-serif italic font-light mb-6" style={{ fontSize:'clamp(1.4rem,3.5vw,2.4rem)', color:'#F6D78A', textShadow:'0 1px 12px rgba(0,0,0,0.55)', letterSpacing:'0.04em' }}>Jewellery Design</p>
       <p className="font-light mb-10 max-w-xl mx-auto leading-relaxed" style={{ fontSize:'clamp(0.9rem,1.6vw,1.05rem)', color:'#EDE8DF', textShadow:'0 1px 8px rgba(0,0,0,0.5)' }}>
         Discover our exclusive collection of handcrafted fine jewelry, where every piece tells a story of luxury and sophistication.
       </p>
