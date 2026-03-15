@@ -634,8 +634,8 @@ import {
   MessageCircle, Eye, ArrowLeft, Home as HomeIcon, Grid, RefreshCw, AlertCircle
 } from 'lucide-react';
 
-const API_BASE = "https://ivera-backend.onrender.com";
-// const API_BASE = import.meta.env.VITE_API_URL;
+// const API_BASE = "https://ivera-backend.onrender.com";
+const API_BASE = import.meta.env.VITE_API_URL;
 
 const WHATSAPP_PHONE = "+919265939045";
 const CATEGORIES = ["All", "Rings", "Necklaces", "Bracelets", "Earrings"];
