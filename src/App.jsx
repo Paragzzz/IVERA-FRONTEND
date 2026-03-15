@@ -1330,11 +1330,8 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
         <div className="md:col-span-2">
-<img 
-  src="/ivera-logo.png"
-  alt="IVERA Logo"
-  className="h-12 mb-4"
-/>          <p className="text-gray-500 leading-relaxed max-w-sm text-sm">Crafting timeless jewelry that celebrates elegance and sophistication.</p>
+          <h2 className="text-3xl font-serif mb-4">IVERA</h2>
+          <p className="text-gray-500 leading-relaxed max-w-sm text-sm">Crafting timeless jewelry that celebrates elegance and sophistication.</p>
           <div className="flex gap-4 mt-6">
             <a href="https://www.instagram.com/ivera_designs?igsh=ODMyaWMxa3ZqZm1n" target="_blank" rel="noreferrer" className="p-2.5 rounded-full bg-white/5 hover:bg-amber-500/20 text-gray-400 hover:text-amber-400 transition"><Instagram size={18} /></a>
             <a href="#" className="p-2.5 rounded-full bg-white/5 hover:bg-amber-500/20 text-gray-400 hover:text-amber-400 transition"><Facebook size={18} /></a>
